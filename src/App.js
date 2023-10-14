@@ -78,6 +78,7 @@ function App() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 mt-20">
           {pokemonData.map((data) => (
             <Link
+              data-testid="poke-card"
               to={`/pokeinfo/${data.name}`}
               key={data.id}
               className="flex flex-col items-center justify-center"
